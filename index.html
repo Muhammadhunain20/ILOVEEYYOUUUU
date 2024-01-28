@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ily</title>
+    <script src="https://kit.fontawesome.com/cbe0a94e75.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            background-color: #00aeffd0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .gif {
+            position: relative;
+            display: inline-block;
+            top: -60px; 
+        }
+        img {
+            margin-bottom: 100px;
+            max-width: 300px;
+            max-height: 500px;
+            display: block;
+            margin: 0 auto;
+        }
+        h1 {
+            margin-top: 260px;
+            position: absolute;
+        }
+        .buttons {
+            margin-top: 400px;
+            display: flex;
+            position: absolute;
+        }
+        button {
+            margin-left: 10px;
+            margin: 20px;
+            color: white;
+            background-color: blue;
+            padding: 20px;
+            cursor: pointer;
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="gif">
+        <img id="myImage" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWw5cm1rZGZya2NtdDJqamU2OHRrMHRlOTVxdXE3Nm5qYzRqdHg0eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H4DjXQXamtTiIuCcRU/giphy.gif" alt="gif">
+    </div>
+    <h1 id="paraText">I'M SORRYYYY! <i class="fa-solid fa-face-frown-open"></i></h1>
+    <div class="buttons">
+        <div id="btn1">
+            <button onclick="changeImageAndText('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTY4dWNld3B2cmQ1cjV3bm5vdWhzaHR5ZmIydXJkaG1wdHcyZ25paSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jPVZA90jXXXLLbDjfC/giphy.gif', 'YAYYYYYY!!!')">
+                <b>HAPPY NOW? <i class="fa-solid fa-face-smile-beam"></i></b>
+            </button>
+        </div>
+        <div id="btn2">
+            <button onclick="changeImageAndText('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTNwdHQ3Mm50c3ZqeGtrNnd4cjlmY2N0YW43dHZkejBmdnBoaWRhZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26uf1ygOxzlFFwnTy/giphy.gif ', 'FORGIVE ME PLEASE:( ')">
+                <b>STILL ANGRY? <i class="fa-solid fa-face-frown-open"></i></b>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function changeImageAndText(newSrc, newText) {
+            document.getElementById('myImage').src = newSrc;
+            document.getElementById('paraText').textContent = newText;
+        }
+    </script>
+</body>
+</html>
